@@ -1,0 +1,24 @@
+{
+  "name": "desafio_mobix",
+  "version": "1.0.0",
+  "description": "mobix logic challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nytezerak/processoSeletivoMobix-desafioDeLogica-ChrystianRibeiro.git"
+  },
+  "keywords": [
+    "'desafio'",
+    "'mobix'",
+    "'nodejs'"
+  ],
+  "author": "Nytezerak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nytezerak/processoSeletivoMobix-desafioDeLogica-ChrystianRibeiro/issues"
+  },
+  "homepage": "https://github.com/Nytezerak/processoSeletivoMobix-desafioDeLogica-ChrystianRibeiro#readme"
+}
