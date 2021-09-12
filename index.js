@@ -51,9 +51,16 @@ function solveParens(input) {
         }
     }
     
-    // Prioridade de parênteses
+    // Detecta grupo de parênteses que não tem parêntese dentro
     const substring = input.replace(/.*\(([^()]+)\).*/, '$1')
-    const result = calculate(substring)
+    let result
+    try {
+        result = calculate(substring)
+    } catch (err) {
+        console.error(err.message)
+        process.exit(1)
+    }
+
 
     const solved = input.replace(/(.*)\(([^()]+)\)(.*)/, '$1' + result + '$3')
 
@@ -61,7 +68,7 @@ function solveParens(input) {
 }
 
 function calculate(input){
-    
+
     var f = { add : '+'
             , sub : '-' 
             , div : '/'
@@ -93,7 +100,7 @@ function calculate(input){
  
     return output;
  
-    //Função que recebe parâmetros pelo Regexp, combina a variável de prioridade com a operação e retorna
+    //Função que recebe parâmetros pelo Regex, combina a variável de prioridade com a operação e retorna
     //o resultado do cálculo do bloco
     function calc_internal(a,op,b){
        a=a*1; b=b*1;
